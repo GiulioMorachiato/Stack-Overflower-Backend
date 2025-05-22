@@ -128,7 +128,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',  # 🔧 CAMBIATO per permettere registrazione
+        'rest_framework.permissions.AllowAny',
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
@@ -158,7 +158,7 @@ CORS_ALLOW_CREDENTIALS = True
 # Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-# Logging configuration - Debug dettagliato
+# Logging configuration - Ottimizzato per ridurre output verbose
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -173,22 +173,22 @@ LOGGING = {
     },
     'root': {
         'handlers': ['console', 'file'],
-        'level': 'DEBUG',  # 🔧 Cambiato a DEBUG per vedere più dettagli
+        'level': 'INFO',  # Cambiato da DEBUG a INFO per ridurre output
     },
     'loggers': {
         'django': {
             'handlers': ['console', 'file'],
-            'level': 'DEBUG',
+            'level': 'INFO',  # Cambiato da DEBUG a INFO
             'propagate': True,
         },
         'djoser': {
             'handlers': ['console'],
-            'level': 'DEBUG',
+            'level': 'WARNING',  # Cambiato da DEBUG a WARNING
             'propagate': True,
         },
         'rest_framework': {
             'handlers': ['console'],
-            'level': 'DEBUG',
+            'level': 'WARNING',  # Cambiato da DEBUG a WARNING
             'propagate': True,
         },
     },
