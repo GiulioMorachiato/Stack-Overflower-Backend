@@ -55,6 +55,8 @@ CORS_ALLOW_HEADERS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    "http://192.168.1.150:8000",      # Il tuo IP locale HTTP
+    "https://192.168.1.150:8000",     # Il tuo IP locale HTTPS
     "https://8a20-95-251-223-155.ngrok-free.app",  # Il tuo URL ngrok
     "http://localhost:8000",
     "http://127.0.0.1:8000",
@@ -64,14 +66,16 @@ CORS_ALLOWED_ORIGINS = [
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 SECURE_REFERRER_POLICY = None
 
-# CSRF Settings - Configurazione per ngrok in sviluppo
+# CSRF Settings - Configurazione per sviluppo locale
 CSRF_TRUSTED_ORIGINS = [
+    "http://192.168.1.150:8000",      # Il tuo IP locale HTTP
+    "https://192.168.1.150:8000",     # Il tuo IP locale HTTPS
     "https://8a20-95-251-223-155.ngrok-free.app",
     "http://localhost:8000",
     "http://127.0.0.1:8000",
 ]
 
-# Per sviluppo con ngrok
+# Per sviluppo locale
 CSRF_COOKIE_SECURE = False
 CSRF_COOKIE_SAMESITE = None
 
