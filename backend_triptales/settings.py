@@ -38,8 +38,45 @@ INSTALLED_APPS = [
     'posts',
 ]
 
+# CORS Settings - Configurazione più permissiva per sviluppo
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+    'ngrok-skip-browser-warning',  # Header specifico per ngrok
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://8a20-95-251-223-155.ngrok-free.app",  # Il tuo URL ngrok
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
+
+# Headers per ngrok
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
+SECURE_REFERRER_POLICY = None
+
+# CSRF Settings - Configurazione per ngrok in sviluppo
+CSRF_TRUSTED_ORIGINS = [
+    "https://8a20-95-251-223-155.ngrok-free.app",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
+
+# Per sviluppo con ngrok
+CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_SAMESITE = None
+
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # DEVE essere primo
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -122,7 +159,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# REST Framework settings
+# REST Framework - Aggiorna configurazione
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
@@ -136,59 +173,81 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
     ],
+    'DEFAULT_THROTTLE_CLASSES': [],  # Disabilita throttling per sviluppo
+    'DEFAULT_THROTTLE_RATES': {},
 }
 
-# DJOSER SETTINGS
+# DJOSER - Aggiorna configurazione
 DJOSER = {
     'LOGIN_FIELD': 'username',
     'USER_CREATE_PASSWORD_RETYPE': False,
     'SEND_ACTIVATION_EMAIL': False,
+    'PASSWORD_RESET_CONFIRM_URL': '#/password/reset/confirm/{uid}/{token}',
+    'USERNAME_RESET_CONFIRM_URL': '#/username/reset/confirm/{uid}/{token}',
     'ACTIVATION_URL': '#/activate/{uid}/{token}',
+    'SEND_CONFIRMATION_EMAIL': False,
     'SERIALIZERS': {
         'user_create': 'users.serializers.UserCreateSerializer',
         'user': 'users.serializers.UserSerializer',
         'current_user': 'users.serializers.UserSerializer',
     },
+    'PERMISSIONS': {
+        'user_create': ['rest_framework.permissions.AllowAny'],
+        'user_list': ['rest_framework.permissions.AllowAny'],
+    }
 }
-
-# CORS Settings
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOW_CREDENTIALS = True
 
 # Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-# Logging configuration - Ottimizzato per ridurre output verbose
+# Logging configuration - Aggiornato per debug migliore
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
+            'formatter': 'simple',
         },
         'file': {
             'class': 'logging.FileHandler',
             'filename': BASE_DIR / 'logs' / 'django.log',
+            'formatter': 'verbose',
         },
     },
     'root': {
         'handlers': ['console', 'file'],
-        'level': 'INFO',  # Cambiato da DEBUG a INFO per ridurre output
+        'level': 'INFO',
     },
     'loggers': {
         'django': {
             'handlers': ['console', 'file'],
-            'level': 'INFO',  # Cambiato da DEBUG a INFO
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',  # Per vedere gli errori delle richieste
             'propagate': True,
         },
         'djoser': {
             'handlers': ['console'],
-            'level': 'WARNING',  # Cambiato da DEBUG a WARNING
+            'level': 'DEBUG',  # Cambiato a DEBUG per vedere errori registrazione
             'propagate': True,
         },
         'rest_framework': {
             'handlers': ['console'],
-            'level': 'WARNING',  # Cambiato da DEBUG a WARNING
+            'level': 'DEBUG',  # Cambiato a DEBUG per vedere errori API
             'propagate': True,
         },
     },
