@@ -55,7 +55,7 @@ CORS_ALLOW_HEADERS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://pjwrossi5.duckdns.org:8000/",      # Il tuo nuovo IP locale HTTP
+    "http://pjwrossi5.duckdns.org:8000",      # Il tuo nuovo IP locale HTTP
 ]
 
 # Headers per ngrok
