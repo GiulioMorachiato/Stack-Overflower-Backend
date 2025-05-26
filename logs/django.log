@@ -1,1 +1,75 @@
 
+INFO 2025-05-26 10:40:21,597 autoreload 48 281473107435552 Watching for file changes with StatReloader
+INFO 2025-05-26 10:40:21,597 autoreload 48 281473107435552 Watching for file changes with StatReloader
+WARNING 2025-05-26 10:40:34,893 log 48 281472961409408 Not Found: /
+WARNING 2025-05-26 10:40:34,893 log 48 281472961409408 Not Found: /
+WARNING 2025-05-26 10:40:34,893 log 48 281472961409408 Not Found: /
+WARNING 2025-05-26 10:40:34,903 basehttp 48 281472961409408 "GET / HTTP/1.1" 404 2619
+WARNING 2025-05-26 10:40:34,903 basehttp 48 281472961409408 "GET / HTTP/1.1" 404 2619
+WARNING 2025-05-26 10:40:35,027 log 48 281472961409408 Not Found: /favicon.ico
+WARNING 2025-05-26 10:40:35,027 log 48 281472961409408 Not Found: /favicon.ico
+WARNING 2025-05-26 10:40:35,027 log 48 281472961409408 Not Found: /favicon.ico
+WARNING 2025-05-26 10:40:35,030 basehttp 48 281472961409408 "GET /favicon.ico HTTP/1.1" 404 2670
+WARNING 2025-05-26 10:40:35,030 basehttp 48 281472961409408 "GET /favicon.ico HTTP/1.1" 404 2670
+INFO 2025-05-26 10:40:56,048 basehttp 48 281472961409408 "GET /api/ HTTP/1.1" 200 5805
+INFO 2025-05-26 10:40:56,048 basehttp 48 281472961409408 "GET /api/ HTTP/1.1" 200 5805
+INFO 2025-05-26 10:40:56,100 basehttp 48 281472919466368 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-05-26 10:40:56,100 basehttp 48 281472919466368 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-05-26 10:40:56,101 basehttp 48 281472908980608 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-05-26 10:40:56,101 basehttp 48 281472908980608 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-05-26 10:40:56,109 basehttp 48 281472929952128 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-05-26 10:40:56,104 basehttp 48 281472940437888 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-05-26 10:40:56,104 basehttp 48 281472940437888 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-05-26 10:40:56,114 basehttp 48 281472908980608 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-05-26 10:40:56,109 basehttp 48 281472929952128 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-05-26 10:40:56,116 basehttp 48 281472950923648 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-05-26 10:40:56,116 basehttp 48 281472961409408 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-05-26 10:40:56,111 basehttp 48 281472919466368 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-05-26 10:40:56,114 basehttp 48 281472908980608 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-05-26 10:40:56,123 basehttp 48 281472940437888 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-05-26 10:40:56,123 basehttp 48 281472929952128 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-05-26 10:40:56,116 basehttp 48 281472950923648 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-05-26 10:40:56,116 basehttp 48 281472961409408 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-05-26 10:40:56,111 basehttp 48 281472919466368 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-05-26 10:40:56,123 basehttp 48 281472940437888 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-05-26 10:40:56,123 basehttp 48 281472929952128 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-05-26 10:40:56,129 basehttp 48 281472950923648 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-05-26 10:40:56,131 basehttp 48 281472919466368 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-05-26 10:40:56,129 basehttp 48 281472950923648 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-05-26 10:40:56,131 basehttp 48 281472919466368 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+WARNING 2025-05-26 10:41:02,296 log 48 281472940437888 Unauthorized: /api/user-badges/
+WARNING 2025-05-26 10:41:02,296 log 48 281472940437888 Unauthorized: /api/user-badges/
+WARNING 2025-05-26 10:41:02,296 log 48 281472940437888 Unauthorized: /api/user-badges/
+WARNING 2025-05-26 10:41:02,298 basehttp 48 281472940437888 "GET /api/user-badges/ HTTP/1.1" 401 5185
+WARNING 2025-05-26 10:41:02,298 basehttp 48 281472940437888 "GET /api/user-badges/ HTTP/1.1" 401 5185
+INFO 2025-05-26 10:41:02,326 basehttp 48 281472929952128 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,326 basehttp 48 281472940437888 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,326 basehttp 48 281472929952128 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,326 basehttp 48 281472940437888 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,330 basehttp 48 281472950923648 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,330 basehttp 48 281472950923648 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,335 basehttp 48 281472929952128 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,335 basehttp 48 281472929952128 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,340 basehttp 48 281472940437888 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,357 basehttp 48 281472929952128 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,330 basehttp 48 281472961409408 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,330 basehttp 48 281472961409408 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,343 basehttp 48 281472950923648 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,347 basehttp 48 281472908980608 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,347 basehttp 48 281472908980608 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,357 basehttp 48 281472929952128 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,343 basehttp 48 281472919466368 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,343 basehttp 48 281472919466368 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,343 basehttp 48 281472950923648 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,340 basehttp 48 281472940437888 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,362 basehttp 48 281472961409408 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:02,362 basehttp 48 281472961409408 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-05-26 10:41:04,857 basehttp 48 281472827191680 "GET /api/ HTTP/1.1" 200 5805
+INFO 2025-05-26 10:41:04,857 basehttp 48 281472827191680 "GET /api/ HTTP/1.1" 200 5805
+INFO 2025-05-26 10:42:25,891 autoreload 48 281473527672864 Watching for file changes with StatReloader
+INFO 2025-05-26 10:42:25,891 autoreload 48 281473527672864 Watching for file changes with StatReloader
+WARNING 2025-05-26 10:42:29,024 log 48 281473456337280 Not Found: /
+WARNING 2025-05-26 10:42:29,024 log 48 281473456337280 Not Found: /
+WARNING 2025-05-26 10:42:29,024 log 48 281473456337280 Not Found: /
+WARNING 2025-05-26 10:42:29,026 basehttp 48 281473456337280 "GET / HTTP/1.1" 404 2619
+WARNING 2025-05-26 10:42:29,026 basehttp 48 281473456337280 "GET / HTTP/1.1" 404 2619
