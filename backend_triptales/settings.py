@@ -55,11 +55,7 @@ CORS_ALLOW_HEADERS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://172.20.10.8:8000",      # Il tuo nuovo IP locale HTTP
-    "https://172.20.10.8:8000",     # Il tuo nuovo IP locale HTTPS
-    "https://8a20-95-251-223-155.ngrok-free.app",  # Il tuo URL ngrok (se lo usi)
-    "http://localhost:8000",
-    "http://127.0.0.1:8000",
+    "http://pjwrossi5.duckdns.org:8000/",      # Il tuo nuovo IP locale HTTP
 ]
 
 # Headers per ngrok
