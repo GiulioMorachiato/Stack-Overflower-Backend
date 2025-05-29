@@ -55,7 +55,7 @@ CORS_ALLOW_HEADERS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://pjwrossi5.duckdns.org:8000",      # Il tuo nuovo IP locale HTTP
+    "http://costaalberto.duckdns.org:8009",      # Il tuo nuovo IP locale HTTP
 ]
 
 # Headers per ngrok
@@ -64,11 +64,7 @@ SECURE_REFERRER_POLICY = None
 
 # CSRF Settings - Configurazione per sviluppo locale
 CSRF_TRUSTED_ORIGINS = [
-    "http://192.168.1.150:8000",      # Il tuo IP locale HTTP
-    "https://192.168.1.150:8000",     # Il tuo IP locale HTTPS
-    "https://8a20-95-251-223-155.ngrok-free.app",
-    "http://localhost:8000",
-    "http://127.0.0.1:8000",
+    "http://costaalberto.duckdns.org:8009",
 ]
 
 # Per sviluppo locale
